@@ -1,0 +1,69 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+body {
+  background-color: #f7ecde;
+  box-sizing: border-box;
+  margin: 0;
+}
+h1 {
+  font-size: 50px;
+  font-family: "Pacifico", cursive;
+  color: #352e28;
+  position: relative;
+}
+h1::before
+{
+  content: "";
+  position: absolute;
+  width: 110%;
+  height: 25%;
+  left: 0;
+  bottom: 10px;
+  background-color: #fec260;
+  transition: height .35s;
+  z-index: -1;
+}
+h1:hover::before{
+  height: 50%;
+}
+h2 {
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+  color: transparent;
+  background-clip: text;
+  font-family: "Righteous", cursive;
+  font-size: 25px;
+}
+.submit-btn{
+    background-color: #d1512d !important;
+    color: white !important;
+}
+table thead{
+    border-color: inherit;
+    border-style: solid;
+}
+.line{
+    border-bottom: 2px dotted black;
+    width: 75%;
+  margin: auto;
+
+}
+.w-95{
+  width: 95% !important;
+}
+.visit-btn {
+  background-color: #8A9E23;
+  color: white;
+}
+.visit-btn:hover{
+  background-color: #5f6d18;
+  color: white;
+}
+.delete-btn {
+  background-color: #D30820;
+  color: white;
+}
+.delete-btn:hover {
+  background-color: #b1091c;
+  color: white;
+}

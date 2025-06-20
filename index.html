@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="/webfonts/all.min.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <section class="py-5 text-center">
+      <div class="container">
+        <h1 class="py-2 m-auto w-50">Bookmarker</h1>
+        <div class="line w-100 py-3"></div>
+        <h2 class="text-center py-4 fw-bold">
+          <i class="fa-solid fa-bookmark"></i>
+          Bookmark your favorite sites
+          <i class="fa-solid fa-bookmark"></i>
+        </h2>
+        <div class="w-95 m-auto">
+          <div class="text-start">
+            <label for="bookmarkName" class="pb-2 fw-bold">
+              <i class="fa-solid fa-book-bookmark pe-2"></i>Site Name</label
+            >
+            <input
+              type="text"
+              class="form-control mb-3"
+              id="siteNameId"
+              placeholder="Bookmark Name"
+            />
+          </div>
+          <div class="text-start">
+            <label for="bookmarkURL" class="pb-2 fw-bold">
+              <i class="fa-solid fa-link pe-2"></i>Site URL</label
+            >
+            <input
+              type="text"
+              class="form-control mb-3"
+              id="siteUrlId"
+              placeholder="Website URL"
+            />
+          </div>
+          <button
+            onclick="submitBookmark()"
+            class="btn btn-submit px-5 my-2 fw-semibold text-center submit-btn"
+            id="submitBtnId"
+          >
+            Submit
+          </button>
+        </div>
+        <div class="line w-100 py-3"></div>
+      </div>
+      <section class="my-5">
+        <table class="container text-center bg-white">
+          <thead>
+            <th>Index</th>
+            <th>Website Name</th>
+            <th id="visit-btn">Visit</th>
+            <th id="delete-btn">Delete</th>
+          </thead>
+          <tbody id="tBody"></tbody>
+        </table>
+      </section>
+    </section>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
